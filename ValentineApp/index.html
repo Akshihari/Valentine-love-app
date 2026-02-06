@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hi Harish My lovely Hubsand 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe Script', cursive;
+  background: radial-gradient(circle, #ff5f9e, #8e2de2);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.card {
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255,255,255,0.4);
+  animation: fadeIn 2s;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.yes {
+  background: #ffcc00;
+}
+
+.no {
+  background: #ff4d4d;
+  position: absolute;
+}
+
+@keyframes fadeIn {
+  from {opacity:0; transform: scale(0.8);}
+  to {opacity:1; transform: scale(1);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h1>Hi Akshitha 💖</h1>
+  <p>Will you be part of my love story forever? 💞</p>
+
+  <div class="buttons">
+    <button class="yes" onclick="yesClicked()">YES 💖</button>
+    <button class="no" onmouseover="moveNo()">NO 😜</button>
+  </div>
+</div>
+
+<audio id="music" src="music/love.mp3"></audio>
+
+<script>
+function moveNo() {
+  const btn = document.querySelector('.no');
+  btn.style.left = Math.random() * window.innerWidth + 'px';
+  btn.style.top = Math.random() * window.innerHeight + 'px';
+}
+
+function yesClicked() {
+  document.getElementById("music").play();
+  alert("You just made my world beautiful 💖🎆");
+  window.location.href = "story/page1.html";
+}
+</script>
+
+</body>
+</html>

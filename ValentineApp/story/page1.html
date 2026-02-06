@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our Story 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Segoe Script', cursive;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.box {
+  background: rgba(0,0,0,0.4);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 90%;
+  animation: fade 2s;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+img {
+  width: 200px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ffd700;
+}
+
+@keyframes fade {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h1>The Day We Met 💫</h1>
+  <p>
+    That day didn’t feel special at first…  
+    but my heart knew something beautiful had started.  
+    From that moment, every smile of yours stayed with me 💕
+  </p>
+
+  <img src="../images/1.jpg" alt="Memory">
+
+  <br>
+  <button onclick="next()">Next ❤️</button>
+</div>
+
+<script>
+function next() {
+  window.location.href = "page2.html";
+}
+</script>
+
+</body>
+</html>
